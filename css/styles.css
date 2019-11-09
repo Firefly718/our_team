@@ -308,6 +308,77 @@ template {
 [hidden] {
   display: none; }
 
+.slider {
+  position: relative; }
+  .slider__slide {
+    height: 500px; }
+  .slider__arrow {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 75px;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+    transition: all .4s ease-in; }
+    .slider__arrow:hover svg, .slider__arrow:focus svg, .slider__arrow:active svg {
+      -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      -o-transform: scale(1.3);
+      transform: scale(1.3); }
+    .slider__arrow--left {
+      left: 0;
+      -webkit-transition: all .4s ease-in;
+      -o-transition: all .4s ease-in;
+      transition: all .4s ease-in; }
+      .slider__arrow--left svg {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg); }
+      .slider__arrow--left:hover svg, .slider__arrow--left:focus svg, .slider__arrow--left:active svg {
+        -webkit-transform: rotate(180deg) scale(1.3);
+        -ms-transform: rotate(180deg) scale(1.3);
+        -o-transform: rotate(180deg) scale(1.3);
+        transform: rotate(180deg) scale(1.3); }
+    .slider__arrow--right {
+      right: 0; }
+    .slider__arrow svg {
+      fill: #ffcc00;
+      -webkit-transition: all .4s ease-in;
+      -o-transition: all .4s ease-in;
+      transition: all .4s ease-in; }
+  .slider__dots {
+    padding: 10px;
+    margin: 0;
+    text-align: center; }
+    .slider__dots li {
+      display: inline-block; }
+  .slider__dot {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    background-color: #ffcc00;
+    -webkit-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+    transition: all .4s ease-in; }
+    .slider__dot--active {
+      border-color: #ffcc00;
+      background-color: transparent; }
+    .slider__dot:hover, .slider__dot:focus, .slider__dot:active {
+      border-color: #ffcc00;
+      background-color: transparent; }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }

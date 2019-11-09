@@ -1,6 +1,7 @@
 @import'variables';
 @import'normalize';
 @import'mixins';
+@import'slider';
 
 * {
     box-sizing: border-box;
@@ -30,7 +31,7 @@ body {
     text-transform: uppercase;
     position: relative;
     &::before,
-    &:after { 
+    &:after {
         content: '';
         display: inline-block;
         bottom: 0;

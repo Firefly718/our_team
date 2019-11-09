@@ -5,3 +5,17 @@
     font-weight: $weight;
     line-height: $line;
 }
+
+@mixin tr {
+    transition: all .4s ease-in;
+}
+
+@mixin hover {
+    @include tr();
+    &:hover,
+    &:focus,
+    &:active {
+        @content;
+    }
+}
+ 
